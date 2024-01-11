@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/dc2607e017.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>YILDIZBUCKS | Kahveler</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header" id="menu">
+            <div class="logo" id="logo">
+                <a href="index.html">
+                    <img src="pictures/logo.png" id="logo-image" alt=" logo">
+                </a>
+            </div>
+
+            <div class="cart-toggle">
+                <div id="cart-toggle-tab">
+                    <div class="total" id="total">0</div>
+                    <i class="fa-solid fa-basket-shopping"></i>            
+                </div>
+            </div>
+
+            <div class="menu-items">
+                <div id="menu-items">
+                    <h2 id="nav-item"><a href="hakkinda.html">Hakkında</a></h2>
+                    <h2 id="nav-item"><a href="kahve.html">Kahveler</a></h2>
+                    <h2 id="nav-item"><a href="iletisim.html">İletişim</a></h2>
+                    <div class="cart-toggle-container">
+                        <h2 class="cart-toggle-desktop" id="nav-item">Sepet</h2>
+                        <h2 class="total">0</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side-nav" id="side-nav">
+                <div class="mobile-menu" id="mobile-menu"> 
+                    <h1>Menu</h1>
+                </div>
+
+                <div class="logo" id="logo-side-nav">
+                    <img src="pictures/logo.png" id="logo-img-side-nav" alt="logo">
+                </div>
+
+                <div id="side-nav-items">
+                    <h2 id="nav-item"><a href="hakkinda.html">Hakkında</a></h2>
+                    <h2 id="nav-item"><a href="kahve.html">Kahveler</a></h2>
+                    <h2 id="nav-item"><a href="iletisim.html">İletişim</a></h2>
+                    <div class="cart-toggle-container">
+                        <h2 class="cart-toggle-desktop" id="nav-item">Sepet</h2>
+                        <h2 class="total">0</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div id="content" class="main-container"></div>
+        </div>
+
+        <div class="cart-items hide" id="cart">
+            <div class="cart-details">
+                <div class="cart-top">
+                    <h2 class="cart">Alışveriş Sepetiniz:</h2>
+                    <h2 class="close">&#x2715</h2>
+                </div>
+
+                <div class="cart-details-wrapper">
+                    <div class="grand-total">
+                        Toplam: 
+                    </div>
+
+                    <button class="checkout">Çıkış Yap</button>
+                </div>
+            </div>
+            
+            <div class="cart-row-container">
+            </div>
+        </div>
+    </div>
+
+    <script src="merch-cards.js"></script>
+</body>
+
+
+</html>
